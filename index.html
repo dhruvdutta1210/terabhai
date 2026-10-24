@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="Explore TERA BHAI: independent web projects, digital tools, email and hosting experiments, utilities, and new online services — all in one place.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="TERA BHAI">
+  <meta name="application-name" content="TERA BHAI">
+  <link rel="canonical" href="https://terabhai.online/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TERA BHAI">
+  <meta property="og:title" content="TERA BHAI — Digital Projects, Tools & Experiments">
+  <meta property="og:description" content="A central launchpad for TERA BHAI's web projects, digital tools, services, and experiments.">
+  <meta property="og:url" content="https://terabhai.online/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TERA BHAI — Digital Projects, Tools & Experiments">
+  <meta name="twitter:description" content="Explore web projects, digital tools, services, and experiments from TERA BHAI.">
+  <meta name="keywords" content="TERA BHAI, terabhai.online, web projects, online tools, digital services, email experiments, hosting experiments, web development">
+  <title>TERA BHAI — Digital Projects, Tools & Experiments</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TERA BHAI",
+    "url": "https://terabhai.online/",
+    "description": "A central launchpad for digital projects, tools, services, and experiments.",
+    "sameAs": ["https://status.terabhai.online"]
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="orb orb-a"></div><div class="orb orb-b"></div>
+  <nav class="nav wrap">
+    <a class="brand" href="#"><span class="brand-mark">TB</span><span>TERA BHAI<span class="brand-dot">.</span></span></a>
+    <div class="nav-links"><a href="#projects">Projects</a><a href="#about">About</a><a class="status-link" href="https://status.terabhai.online" target="_blank" rel="noopener">● System Status</a></div>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+  </nav>
+
+  <main>
+    <section class="hero wrap">
+      <div class="eyebrow"><span class="pulse"></span> INDEPENDENT DIGITAL LAB <span class="eyebrow-line"></span> EST. 2026</div>
+      <h1>Ideas get built.<br><span class="gradient-text">Things get tested.</span></h1>
+      <p class="hero-copy">A home for experiments, tools, services, and whatever comes next. One domain. Many directions.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects">Explore projects <span>↘</span></a>
+        <a class="button button-ghost" href="https://status.terabhai.online" target="_blank" rel="noopener"><span class="status-dot"></span> Live status</a>
+      </div>
+      <div class="hero-meta"><span>BUILT TO EXPERIMENT</span><span class="meta-divider"></span><span>POWERED BY CURIOSITY</span></div>
+      <div class="scroll-cue"><span></span> SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="projects-section wrap" id="projects">
+      <div class="section-heading">
+        <div><div class="eyebrow">01 / THE LAB</div><h2>Current <span class="gradient-text">experiments.</span></h2></div>
+        <p>Small ideas, useful tools, and bigger things in progress.</p>
+      </div>
+      <div id="project-grid" class="project-grid"><div class="loading-card">Loading the lab<span class="loading-dots">...</span></div></div>
+      <div id="empty-state" class="empty-state" hidden><span class="empty-icon">✳</span><h3>The next thing starts here.</h3><p>Projects will appear here as they launch.</p></div>
+    </section>
+
+    <section class="about-section wrap" id="about">
+      <div class="about-panel">
+        <div class="about-symbol">✳</div>
+        <div><div class="eyebrow">02 / THE IDEA</div><h2>One domain.<br><span class="gradient-text">Endless possibilities.</span></h2>
+        <p>TERA BHAI is the central launchpad for independent digital projects — from web experiments and email tools to hosting ideas and utilities. Things may change, break, improve, and launch here.</p></div>
+        <div class="about-side"><span class="side-label">CURRENT MODE</span><strong><span class="status-dot"></span> EXPERIMENTING</strong><span class="side-label">NEXT UPDATE</span><strong>WHEN IT'S READY</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap"><a class="brand" href="#"><span class="brand-mark">TB</span><span>TERA BHAI<span class="brand-dot">.</span></span></a><span>Independent projects. Unfinished ideas. Real experiments.</span><a href="https://status.terabhai.online" target="_blank" rel="noopener">STATUS ↗</a><a href="copyright.html">COPYRIGHT ↗</a><span class="copyright">© <span id="year"></span> TERA BHAI</span></footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex, nofollow"><meta name="description" content="Private project management panel for TERA BHAI."><link rel="canonical" href="https://terabhai.online/admin.html"><title>Admin — TERA BHAI</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body"><div class="noise"></div><div class="orb orb-a"></div>
+  <nav class="nav wrap"><a class="brand" href="index.html"><span class="brand-mark">TB</span><span>TERA BHAI<span class="brand-dot">.</span></span></a><a class="status-link" href="index.html">← View website</a></nav>
+  <main class="admin-wrap">
+    <section class="admin-card" id="login-card">
+      <div class="eyebrow">PRIVATE CONTROL ROOM</div><h1>Admin <span class="gradient-text">access.</span></h1>
+      <p class="muted">Sign in with the admin account you created in Supabase.</p>
+      <form id="login-form"><label>Email / ID<input id="login-email" type="email" autocomplete="username" required placeholder="admin@example.com"></label><label>Password<input id="login-password" type="password" autocomplete="current-password" required placeholder="Your password"></label><button class="button button-primary full" type="submit">Sign in ↗</button><p class="form-message" id="login-message"></p></form>
+    </section>
+    <section class="admin-card wide" id="dashboard" hidden>
+      <div class="admin-top"><div><div class="eyebrow">CONTROL ROOM</div><h1>Project <span class="gradient-text">manager.</span></h1></div><button class="button button-ghost" id="logout-button">Log out</button></div>
+      <p class="muted">Add, edit, reorder by changing the number, or remove projects. Changes publish to the live homepage.</p>
+      <form id="project-form" class="project-form">
+        <input type="hidden" id="project-id">
+        <label>Project name<input id="project-name" required maxlength="70" placeholder="e.g. Burry Mail"></label>
+        <label>Short description<textarea id="project-description" required maxlength="240" rows="3" placeholder="What does this project do?"></textarea></label>
+        <div class="form-row"><label>Project URL<input id="project-url" type="url" required placeholder="https://..."></label><label>Category<input id="project-category" maxlength="30" placeholder="TOOLS / EMAIL / LAB"></label></div>
+        <div class="form-row"><label>Status<select id="project-status"><option>Live</option><option>In development</option><option>Experimental</option><option>Coming soon</option></select></label><label>Display order<input id="project-order" type="number" value="10" step="1"></label></div>
+        <label>Icon / emoji<input id="project-icon" maxlength="8" placeholder="✳"></label>
+        <div class="form-row"><button class="button button-primary" type="submit" id="save-button">Save project ↗</button><button class="button button-ghost" type="button" id="reset-button">Clear form</button></div>
+        <p class="form-message" id="project-message"></p>
+      </form>
+      <div class="admin-list-heading"><h2>Published projects</h2><button class="button button-ghost" id="refresh-button">Refresh ↻</button></div>
+      <div id="admin-projects" class="admin-projects"></div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="admin.js"></script>
+</body></html>
